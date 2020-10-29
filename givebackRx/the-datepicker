@@ -1,0 +1,26 @@
+<div class="form-group col-sm-12 text-left my-3">
+					  <label for="my-input">Date</label>
+					   <input type="text" class="form-control " id="my-input"  placeholder="dd-mm-yy">
+					   <!-- <span class="loaction-icon red_color"><i class="fas fa-calendar-alt" id="calender-icon"></i></span> -->
+				  </div>
+				  
+				  
+				  <aside >
+			<ul class="settings d-none">
+				<li>
+					<label>datepicker.selectDate("<input type="text" size="15" id="selectDate">"</label>, <label>/* doUpdateMonth: */ <input type="checkbox" id="selectDateDoUpdateMonth" checked="checked"></label>); <span class="error" id="selectDateError"></span>
+				</li>
+				<li>
+					<label>datepicker.goToMonth("<input type="text" size="15" id="goToMonth">");</label> <span class="error" id="goToMonthError"></span>
+				</li>
+				<li>
+					<label>datepicker.getSelectedDate()<span id="selectedDate"></span>;</label>
+				</li>
+				<li>
+					<label>datepicker.getSelectedDateFormatted() === <span id="selectedDateFormatted"></span>;</label>
+				</li>
+				<li>
+					<label>datepicker.getCurrentMonth()<span id="currentMonth"></span>;</label>
+				</li>
+			</ul>
+		</aside>

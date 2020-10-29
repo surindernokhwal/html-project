@@ -1,0 +1,29 @@
+
+<div class="form-group col-sm-12 text-left my-3">
+  <label>Date</label>
+   <input class="form-control" data-date-format="dd/mm/yyyy" id="datepicker">
+   <span class="loaction-icon red_color"><i class="fas fa-calendar-alt" id="calender-icon"></i></span>
+</div>
+
+
+
+<script type="text/javascript">
+		$('#datepicker').datepicker({
+			weekStart: 1,
+			daysOfWeekHighlighted: "6,0",
+			autoclose: true,
+			todayHighlight: true,
+		});
+		$('#datepicker').datepicker("setDate", new Date());
+		$("#icon").click(function(){
+		$('#feRouteDate').datepicker( "show" );
+		})
+	</script>
+	
+	<script>
+		 $(function(){ 
+		$("#calender-icon").click(function(){
+		$('#datepicker').datepicker( "show" );
+		})
+	});
+	</script>
